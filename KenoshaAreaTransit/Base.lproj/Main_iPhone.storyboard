@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8XF-Lc-5JH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="VXG-bQ-b0E">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="8XF-Lc-5JH" customClass="KATHomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X8c-Fn-Nk7" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="tZt-WV-mug">
+                                <rect key="frame" x="20" y="170" width="280" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="GetFileAttachment-7.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchScan:" destination="8XF-Lc-5JH" eventType="touchDown" id="hfx-XQ-fHU"/>
+                                    <action selector="upInsideScan:" destination="8XF-Lc-5JH" eventType="touchUpInside" id="fNF-Al-RC0"/>
+                                    <action selector="upScan:" destination="8XF-Lc-5JH" eventType="touchCancel" id="F3u-wc-AZK"/>
+                                    <action selector="upScan:" destination="8XF-Lc-5JH" eventType="touchUpInside" id="Na9-bU-Aw8"/>
+                                    <action selector="upScan:" destination="8XF-Lc-5JH" eventType="touchDragOutside" id="yql-ML-UN2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="9cJ-Ll-iL0">
+                                <rect key="frame" x="20" y="270" width="280" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="GetFileAttachment-9.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchRoute:" destination="8XF-Lc-5JH" eventType="touchDown" id="bSy-il-Lci"/>
+                                    <action selector="upRoute:" destination="8XF-Lc-5JH" eventType="touchCancel" id="kQ2-Rs-m7K"/>
+                                    <action selector="upRoute:" destination="8XF-Lc-5JH" eventType="touchDragOutside" id="qqw-oM-wL6"/>
+                                    <action selector="upRoute:" destination="8XF-Lc-5JH" eventType="touchUpInside" id="stC-kN-gmN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="3Zv-0o-Pd5">
+                                <rect key="frame" x="20" y="370" width="280" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="GetFileAttachment-12.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchHelp:" destination="8XF-Lc-5JH" eventType="touchDown" id="IYQ-m5-M5y"/>
+                                    <action selector="upHelp:" destination="8XF-Lc-5JH" eventType="touchUpInside" id="jw1-ZE-APk"/>
+                                    <action selector="upHelp:" destination="8XF-Lc-5JH" eventType="touchCancel" id="rAW-ir-Fe3"/>
+                                    <action selector="upHelp:" destination="8XF-Lc-5JH" eventType="touchDragOutside" id="vjd-xc-ys1"/>
+                                    <segue destination="JgE-QG-o0G" kind="modal" id="ouq-g9-Bau"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rua-3N-QSO">
+                                <rect key="frame" x="0.0" y="29" width="320" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="GetFileAttachment-10.png" backgroundImage="KATLogoBanner.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.94000000000000006" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnHelp" destination="3Zv-0o-Pd5" id="nIH-JP-rKg"/>
+                        <outlet property="btnRoute" destination="9cJ-Ll-iL0" id="dWQ-p4-TI5"/>
+                        <outlet property="btnScan" destination="tZt-WV-mug" id="8p1-h7-bKa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T42-K9-MeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="152"/>
+        </scene>
+        <!--Route View Controller-->
+        <scene sceneID="ogC-l4-rKq">
+            <objects>
+                <viewController storyboardIdentifier="Route" id="ZRR-bg-5pr" userLabel="Route View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ubQ-92-qrU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" cyan="0.94000000000000006" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KsM-JU-ksX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="152"/>
+        </scene>
+        <!--Help Tab Bar Controller-->
+        <scene sceneID="SqZ-zm-WD2">
+            <objects>
+                <tabBarController storyboardIdentifier="Help Tabs" definesPresentationContext="YES" id="JgE-QG-o0G" userLabel="Help Tab Bar Controller" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="XkS-2E-0Ji">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0YB-b3-bcY" kind="relationship" relationship="viewControllers" id="bFo-IM-A5r"/>
+                        <segue destination="uIZ-Op-Br6" kind="relationship" relationship="viewControllers" id="OIA-Xp-J4x"/>
+                        <segue destination="Vu5-z9-IR0" kind="relationship" relationship="viewControllers" id="AI8-N2-Qqg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elx-lN-oBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="872"/>
+        </scene>
+        <!--Route Help View Controller-->
+        <scene sceneID="za1-FP-C0E">
+            <objects>
+                <viewController storyboardIdentifier="Route Help" id="uIZ-Op-Br6" userLabel="Route Help View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dfi-lV-Mpg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is Route Tab" id="Uwj-9q-NdC">
+                                <rect key="frame" x="0.0" y="72" width="320" height="446"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kaQ-96-ek8">
+                                <rect key="frame" x="8" y="14" width="83" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="GetFileAttachment-13.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lUn-H4-bgD" kind="unwind" unwindAction="unwindToMainMenu:" id="xM5-5F-UHI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Route" image="KATRouteIcon.png" id="Xop-b4-kdB"/>
+                    <navigationItem key="navigationItem" id="6wj-St-2mu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Feu-xI-6k3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lUn-H4-bgD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="152"/>
+        </scene>
+        <!--Scan Help View Controller-->
+        <scene sceneID="bzi-oi-E1W">
+            <objects>
+                <viewController storyboardIdentifier="Scan Help" id="0YB-b3-bcY" userLabel="Scan Help View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R7m-1e-k3j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is the Scan page" id="r1B-Da-eq0">
+                                <rect key="frame" x="0.0" y="72" width="320" height="446"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5T1-Q9-qnQ">
+                                <rect key="frame" x="8" y="14" width="83" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="GetFileAttachment-13.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YWw-E5-RSj" kind="unwind" unwindAction="unwindToMainMenu:" id="6Qs-M2-A3v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="KATScanIcon.png" id="gII-26-7I3">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybo-By-t5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="YWw-E5-RSj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="872"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="qDC-1x-9w0">
+            <objects>
+                <tableViewController id="VLL-Ln-55W" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lS6-88-jQz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="e0u-a4-e75">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e0u-a4-e75" id="8Ww-QD-RTQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VLL-Ln-55W" id="ogY-zW-8MD"/>
+                            <outlet property="delegate" destination="VLL-Ln-55W" id="uDt-9I-2Es"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6z-dY-eSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-570"/>
+        </scene>
+        <!--Contact Help View Controller-->
+        <scene sceneID="4yB-dP-FPb">
+            <objects>
+                <viewController storyboardIdentifier="Contact Help" id="Vu5-z9-IR0" userLabel="Contact Help View Controller" customClass="KATHelpContactViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ta-an-A9t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="QwC-2s-cC4">
+                                <rect key="frame" x="0.0" y="72" width="320" height="446"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Fares:
+
+    Adult -- $1.75
+
+    Student -- $1.25
+
+    Elderly and Disabled -- $0.85
+
+    Fares include one free transfer, you may request one upon boarding        Buses run Monday through Saturday
+
+Buses are equipped with wheelchair accessibility and bike racks
+
+For further information call:
+
+    (English) 262-653-4287
+
+    (Espanol) 262-657-2170
+
+or visit: www.kenosha.org</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2AI-4J-ASs">
+                                <rect key="frame" x="8" y="14" width="83" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="GetFileAttachment-13.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ym9-4S-uCi" kind="unwind" unwindAction="unwindToMainMenu:" id="NFa-WW-4MU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contact" image="KATContactIcon.png" id="ORX-07-JOh"/>
+                    <connections>
+                        <outlet property="backButton" destination="2AI-4J-ASs" id="bSl-bq-E3J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5E-7q-kYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ym9-4S-uCi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="-570"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GetFileAttachment-10.png" width="974" height="359"/>
+        <image name="GetFileAttachment-12.png" width="857" height="350"/>
+        <image name="GetFileAttachment-13.png" width="514" height="286"/>
+        <image name="GetFileAttachment-7.png" width="857" height="350"/>
+        <image name="GetFileAttachment-9.png" width="857" height="350"/>
+        <image name="KATContactIcon.png" width="30" height="30"/>
+        <image name="KATLogoBanner.png" width="974" height="356"/>
+        <image name="KATRouteIcon.png" width="30" height="30"/>
+        <image name="KATScanIcon.png" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
