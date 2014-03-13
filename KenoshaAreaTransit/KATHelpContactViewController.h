@@ -10,5 +10,6 @@
 
 @interface KATHelpContactViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
+@property (strong, nonatomic) IBOutlet UITextView *contactTextView;
 
 @end

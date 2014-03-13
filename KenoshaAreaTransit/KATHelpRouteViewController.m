@@ -1,19 +1,18 @@
 //
-//  KATHelpContactViewController.m
+//  KATHelpRouteViewController.m
 //  KenoshaAreaTransit
 //
-//  Created by Valerie Berglind on 2/22/14.
+//  Created by Valerie Berglind on 3/1/14.
 //  Copyright (c) 2014 Richard Arthur Lebbin III. All rights reserved.
 //
 
-#import "KATHelpContactViewController.h"
+#import "KATHelpRouteViewController.h"
 
-@interface KATHelpContactViewController ()
+@interface KATHelpRouteViewController ()
 
 @end
 
-@implementation KATHelpContactViewController
-
+@implementation KATHelpRouteViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,16 +29,14 @@
 	// Do any additional setup after loading the view.
     UIPinchGestureRecognizer *pinchGestRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action: @selector(scaleTextView:)];
     
-    [_contactTextView addGestureRecognizer:pinchGestRecognizer];
-    
+    [_routeTextView addGestureRecognizer:pinchGestRecognizer];
 }
-
 
 -(void)scaleTextView:(UIPinchGestureRecognizer *)pinchGestRecognizer{
     
     NSLog(@"*** Pinch: Scale: %f Velocity: %f", pinchGestRecognizer.scale, pinchGestRecognizer.velocity);
     
-    UIFont *font = self.contactTextView.font;
+    UIFont *font = self.routeTextView.font;
     CGFloat pointSize = font.pointSize;
     NSString *fontName = font.fontName;
     
@@ -52,7 +49,7 @@
         pointSize = 45;
     }
     
-    self.contactTextView.font = [UIFont fontWithName:fontName size:pointSize];
+    self.routeTextView.font = [UIFont fontWithName:fontName size:pointSize];
 }
 
 -(void)textViewDidChange:(UITextView *)textView{
