@@ -1,19 +1,18 @@
 //
-//  KATHelpContactViewController.m
+//  KATHelpScanViewController.m
 //  KenoshaAreaTransit
 //
-//  Created by Valerie Berglind on 2/22/14.
+//  Created by Valerie Berglind on 3/1/14.
 //  Copyright (c) 2014 Richard Arthur Lebbin III. All rights reserved.
 //
 
-#import "KATHelpContactViewController.h"
+#import "KATHelpScanViewController.h"
 
-@interface KATHelpContactViewController ()
+@interface KATHelpScanViewController ()
 
 @end
 
-@implementation KATHelpContactViewController
-
+@implementation KATHelpScanViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,16 +29,14 @@
 	// Do any additional setup after loading the view.
     UIPinchGestureRecognizer *pinchGestRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action: @selector(scaleTextView:)];
     
-    [_contactTextView addGestureRecognizer:pinchGestRecognizer];
-    
+    [_scanTextView addGestureRecognizer:pinchGestRecognizer];
 }
-
 
 -(void)scaleTextView:(UIPinchGestureRecognizer *)pinchGestRecognizer{
     
     NSLog(@"*** Pinch: Scale: %f Velocity: %f", pinchGestRecognizer.scale, pinchGestRecognizer.velocity);
     
-    UIFont *font = self.contactTextView.font;
+    UIFont *font = self.scanTextView.font;
     CGFloat pointSize = font.pointSize;
     NSString *fontName = font.fontName;
     
@@ -52,7 +49,7 @@
         pointSize = 45;
     }
     
-    self.contactTextView.font = [UIFont fontWithName:fontName size:pointSize];
+    self.scanTextView.font = [UIFont fontWithName:fontName size:pointSize];
 }
 
 -(void)textViewDidChange:(UITextView *)textView{

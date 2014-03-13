@@ -9,19 +9,18 @@
 #import "KATHomeViewController.h"
 
 @implementation KATHomeViewController
-@synthesize btnHelp, btnRoute, btnScan, resultText;
+@synthesize btnHelp, btnRoute, btnScan;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-7.png"] forState:UIControlStateSelected];
-        [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-9.png"] forState:UIControlStateSelected];
-        [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-12.png"] forState:UIControlStateSelected];
+        [btnRoute setImage:[UIImage imageNamed:@"KATRouteButton.png"] forState:UIControlStateSelected];
+        [btnHelp setImage:[UIImage imageNamed:@"KATHelpButton.png"] forState:UIControlStateSelected];
         
-        [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-6.png"] forState:UIControlStateHighlighted];
-        [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-8.png"] forState:UIControlStateHighlighted];
-        [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-11.png"] forState:UIControlStateHighlighted];
+        [btnScan setImage:[UIImage imageNamed:@"KATScanButtonClicked.png"] forState:UIControlStateHighlighted];
+        [btnRoute setImage:[UIImage imageNamed:@"KATRouteButtonClicked.png"] forState:UIControlStateHighlighted];
+        [btnHelp setImage:[UIImage imageNamed:@"KatHelpButtonClicked.png"] forState:UIControlStateHighlighted];
         
         btnScan.adjustsImageWhenHighlighted = YES;
         btnRoute.adjustsImageWhenHighlighted = YES;
@@ -36,66 +35,30 @@
  the user touches them
  ************************************/
 -(IBAction)touchScan:(id)sender {
-    [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-6.png"] forState:UIControlStateNormal];
+    [btnScan setImage:[UIImage imageNamed:@"KATScanButtonClicked.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)upScan:(id)sender {
-    [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-7.png"] forState:UIControlStateNormal];
-}
-
--(IBAction)upInsideScan:(id)sender {
-    @autoreleasepool {
-        ZBarReaderViewController *reader = [ZBarReaderViewController new];
-        reader.readerDelegate = self;
-        reader.supportedOrientationsMask = ZBarOrientationMaskAll;
-        
-        ZBarImageScanner *scanner = reader.scanner;
-        
-        [scanner setSymbology: 0
-                       config: ZBAR_CFG_ENABLE
-                           to: 0];
-        [scanner setSymbology: ZBAR_QRCODE
-                       config: ZBAR_CFG_ENABLE
-                           to: 1];
-        
-        [self presentViewController: reader
-                           animated: YES
-                         completion: Nil];
-    }
+    
+    [btnScan setImage:[UIImage imageNamed:@"KATScanButton.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)touchRoute:(id)sender {
-    [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-8.png"] forState:UIControlStateNormal];
+    [btnRoute setImage:[UIImage imageNamed:@"KATRouteButtonClicked.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)upRoute:(id)sender {
     
-    [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-9.png"] forState:UIControlStateNormal];
+    [btnRoute setImage:[UIImage imageNamed:@"KATRouteButton.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)touchHelp:(id)sender {
-    [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-11.png"] forState:UIControlStateNormal];
+    [btnHelp setImage:[UIImage imageNamed:@"KATHelpButtonClicked.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)upHelp:(id)sender {
     
-    [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-12.png"] forState:UIControlStateNormal];
-}
-
-- (void) imagePickerController: (UIImagePickerController*) reader
- didFinishPickingMediaWithInfo: (NSDictionary*) info
-{
-    id<NSFastEnumeration> results =
-    [info objectForKey: ZBarReaderControllerResults];
-    ZBarSymbol *symbol = nil;
-    for(symbol in results)
-        break;
-    
-    // EXAMPLE: do something useful with the barcode data
-    resultText.text = symbol.data;
-    
-    [reader dismissViewControllerAnimated: YES
-                               completion: nil];
+    [btnHelp setImage:[UIImage imageNamed:@"KATHelpButton.png"] forState:UIControlStateNormal];
 }
 
 - (void)viewDidLoad
@@ -107,6 +70,10 @@
 
 -(IBAction)unwindToMainMenu:(UIStoryboardSegue *)sender{
     
+}
+
+-(BOOL)shouldAutorotate{
+    return NO;
 }
 
 
