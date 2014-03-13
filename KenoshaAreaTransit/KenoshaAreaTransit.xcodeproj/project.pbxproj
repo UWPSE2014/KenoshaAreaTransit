@@ -10,9 +10,7 @@
 		671F146218AA935200DB8018 /* KATHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671F146118AA935200DB8018 /* KATHomeViewController.m */; };
 		6725A30018BC656300F39E56 /* KATBusListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6725A2F718BC656300F39E56 /* KATBusListTableCell.m */; };
 		6725A30118BC656300F39E56 /* KATBusRouteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6725A2F918BC656300F39E56 /* KATBusRouteListViewController.m */; };
-		6725A30218BC656300F39E56 /* KATDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6725A2FB18BC656300F39E56 /* KATDetailViewController.m */; };
 		6725A30318BC656300F39E56 /* KATHelpContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6725A2FD18BC656300F39E56 /* KATHelpContactViewController.m */; };
-		6725A30418BC656300F39E56 /* KATMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6725A2FF18BC656300F39E56 /* KATMasterViewController.m */; };
 		6725A30718BC663200F39E56 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6725A30518BC663200F39E56 /* Main_iPhone.storyboard */; };
 		67339D1518A3FC8200C6F563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67339D1418A3FC8200C6F563 /* Foundation.framework */; };
 		67339D1718A3FC8200C6F563 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67339D1618A3FC8200C6F563 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -72,12 +70,8 @@
 		6725A2F718BC656300F39E56 /* KATBusListTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATBusListTableCell.m; sourceTree = "<group>"; };
 		6725A2F818BC656300F39E56 /* KATBusRouteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATBusRouteListViewController.h; sourceTree = "<group>"; };
 		6725A2F918BC656300F39E56 /* KATBusRouteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATBusRouteListViewController.m; sourceTree = "<group>"; };
-		6725A2FA18BC656300F39E56 /* KATDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATDetailViewController.h; sourceTree = "<group>"; };
-		6725A2FB18BC656300F39E56 /* KATDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATDetailViewController.m; sourceTree = "<group>"; };
 		6725A2FC18BC656300F39E56 /* KATHelpContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATHelpContactViewController.h; sourceTree = "<group>"; };
 		6725A2FD18BC656300F39E56 /* KATHelpContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATHelpContactViewController.m; sourceTree = "<group>"; };
-		6725A2FE18BC656300F39E56 /* KATMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATMasterViewController.h; sourceTree = "<group>"; };
-		6725A2FF18BC656300F39E56 /* KATMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATMasterViewController.m; sourceTree = "<group>"; };
 		6725A30618BC663200F39E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KenoshaAreaTransit/Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		67339D1118A3FC8200C6F563 /* KenoshaAreaTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenoshaAreaTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67339D1418A3FC8200C6F563 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -223,12 +217,8 @@
 				6725A2F718BC656300F39E56 /* KATBusListTableCell.m */,
 				6725A2F818BC656300F39E56 /* KATBusRouteListViewController.h */,
 				6725A2F918BC656300F39E56 /* KATBusRouteListViewController.m */,
-				6725A2FA18BC656300F39E56 /* KATDetailViewController.h */,
-				6725A2FB18BC656300F39E56 /* KATDetailViewController.m */,
 				6725A2FC18BC656300F39E56 /* KATHelpContactViewController.h */,
 				6725A2FD18BC656300F39E56 /* KATHelpContactViewController.m */,
-				6725A2FE18BC656300F39E56 /* KATMasterViewController.h */,
-				6725A2FF18BC656300F39E56 /* KATMasterViewController.m */,
 				671F146018AA935200DB8018 /* KATHomeViewController.h */,
 				671F146118AA935200DB8018 /* KATHomeViewController.m */,
 				6725A30518BC663200F39E56 /* Main_iPhone.storyboard */,
@@ -477,13 +467,11 @@
 			files = (
 				6725A30118BC656300F39E56 /* KATBusRouteListViewController.m in Sources */,
 				67339D2118A3FC8200C6F563 /* main.m in Sources */,
-				6725A30218BC656300F39E56 /* KATDetailViewController.m in Sources */,
 				67339D2518A3FC8200C6F563 /* KATAppDelegate.m in Sources */,
 				6725A30018BC656300F39E56 /* KATBusListTableCell.m in Sources */,
 				6725A30318BC656300F39E56 /* KATHelpContactViewController.m in Sources */,
 				671F146218AA935200DB8018 /* KATHomeViewController.m in Sources */,
 				67929A4D18CEA866004EF6A0 /* KATDatabaseManager.m in Sources */,
-				6725A30418BC656300F39E56 /* KATMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -576,9 +564,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -586,7 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -613,6 +602,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -622,6 +612,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KenoshaAreaTransit/KenoshaAreaTransit-Prefix.pch";
 				INFOPLIST_FILE = "KenoshaAreaTransit/KenoshaAreaTransit-Info.plist";
@@ -631,6 +622,7 @@
 					/Users/riarle3/Desktop/KAT/KenoshaAreaTransit/ZBarSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -641,6 +633,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KenoshaAreaTransit/KenoshaAreaTransit-Prefix.pch";
 				INFOPLIST_FILE = "KenoshaAreaTransit/KenoshaAreaTransit-Info.plist";
@@ -650,6 +643,7 @@
 					/Users/riarle3/Desktop/KAT/KenoshaAreaTransit/ZBarSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

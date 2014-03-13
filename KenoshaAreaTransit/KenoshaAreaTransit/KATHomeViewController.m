@@ -46,6 +46,7 @@
 -(IBAction)upInsideScan:(id)sender {
     @autoreleasepool {
         ZBarReaderViewController *reader = [ZBarReaderViewController new];
+        //ZBarReaderViewController *reader = [[ZBarReaderViewController alloc] init];
         reader.readerDelegate = self;
         reader.supportedOrientationsMask = ZBarOrientationMaskAll;
         
@@ -58,9 +59,8 @@
                        config: ZBAR_CFG_ENABLE
                            to: 1];
         
-        [self presentViewController: reader
-                           animated: YES
-                         completion: Nil];
+        [self presentViewController:reader animated:YES completion: Nil];
+        //[self.navigationController pushViewController:reader animated:YES];
     }
 }
 

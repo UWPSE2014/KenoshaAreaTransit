@@ -70,8 +70,6 @@ static sqlite3_stmt *statement = nil;
     }
     return NO;
 }
-
-- (BOOL) ;
                                 
 - (NSArray*) findByRegisterNumber:(NSString*)registerNumber {
     const char *dbpath = [databasePath UTF8String];
