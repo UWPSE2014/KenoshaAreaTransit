@@ -7,6 +7,7 @@
 //
 
 #import "KATHomeViewController.h"
+#import "KATBusRouteListViewController.h"
 
 @implementation KATHomeViewController
 @synthesize btnHelp, btnRoute, btnScan, resultText;
@@ -60,7 +61,6 @@
                            to: 1];
         
         [self presentViewController:reader animated:YES completion: Nil];
-        //[self.navigationController pushViewController:reader animated:YES];
     }
 }
 
@@ -96,6 +96,7 @@
     
     [reader dismissViewControllerAnimated: YES
                                completion: nil];
+    
 }
 
 - (void)viewDidLoad
