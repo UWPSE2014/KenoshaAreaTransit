@@ -47,7 +47,7 @@
 -(IBAction)upInsideScan:(id)sender {
     @autoreleasepool {
         ZBarReaderViewController *reader = [ZBarReaderViewController new];
-        //ZBarReaderViewController *reader = [[ZBarReaderViewController alloc] init];
+        
         reader.readerDelegate = self;
         reader.supportedOrientationsMask = ZBarOrientationMaskAll;
         
@@ -83,10 +83,8 @@
 }
 
 - (void) imagePickerController: (UIImagePickerController*) reader
- didFinishPickingMediaWithInfo: (NSDictionary*) info
-{
-    id<NSFastEnumeration> results =
-    [info objectForKey: ZBarReaderControllerResults];
+ didFinishPickingMediaWithInfo: (NSDictionary*) info {
+    id<NSFastEnumeration> results = [info objectForKey: ZBarReaderControllerResults];
     ZBarSymbol *symbol = nil;
     for(symbol in results)
         break;
@@ -99,20 +97,12 @@
     
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
 
-
--(IBAction)unwindToMainMenu:(UIStoryboardSegue *)sender{
-    
-}
-
-
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

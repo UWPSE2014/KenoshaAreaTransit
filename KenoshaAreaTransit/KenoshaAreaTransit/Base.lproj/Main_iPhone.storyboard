@@ -67,6 +67,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="l61-4u-CIt">
+                                <rect key="frame" x="20" y="153" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" cyan="0.94000000000000006" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                     </view>
@@ -75,6 +81,7 @@
                         <outlet property="btnHelp" destination="3Zv-0o-Pd5" id="nIH-JP-rKg"/>
                         <outlet property="btnRoute" destination="9cJ-Ll-iL0" id="dWQ-p4-TI5"/>
                         <outlet property="btnScan" destination="tZt-WV-mug" id="8p1-h7-bKa"/>
+                        <outlet property="resultText" destination="l61-4u-CIt" id="SKc-Qr-afg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T42-K9-MeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
