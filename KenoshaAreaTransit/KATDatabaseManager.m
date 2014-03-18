@@ -29,15 +29,14 @@ static sqlite3_stmt *statement = nil;
     (NSDocumentDirectory, NSUserDomainMask, YES);
     docsDir = dirPaths[0];
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString:
-                    [docsDir stringByAppendingPathComponent: @"katschedule.db"]];
+    databasePath = [[NSString alloc] initWithString:[docsDir stringByAppendingPathComponent: @"katschedule.db"]];
     BOOL isSuccess = YES;
     NSFileManager *filemgr = [NSFileManager defaultManager];
     if ([filemgr fileExistsAtPath: databasePath ] == NO) {
         const char *dbpath = [databasePath UTF8String];
         if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
             char *errMsg;
-            const char *sql_stmt = "create table if not exists routetable (_id int(6) DEFAULT NULL PRIMARY KEY auto_increment, route int(3) DEFAULT NULL, location text, day text, time int(4) DEFAULT NULL ";
+            const char *sql_stmt = "create table if not exists `kat` ( `_id` int(4) DEFAULT NULL, `route` int(2) DEFAULT NULL, `location` varchar(34) DEFAULT NULL, `day` varchar(8) DEFAULT NULL, `time` int(4) DEFAULT NULL, `direction` varchar(5) DEFAULT NULL)";
             if (sqlite3_exec(database, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK) {
                 isSuccess = NO;
                 NSLog(@"Failed to create table");
@@ -53,15 +52,13 @@ static sqlite3_stmt *statement = nil;
     return isSuccess;
 }
 
-- (BOOL) saveData:(NSString*)registerNumber name:(NSString*)name
-       department:(NSString*)department year:(NSString*)year; {
+- (BOOL) initialize {
     const char *dbpath = [databasePath UTF8String];
-    if (sqlite3_open(dbpath, &database) == SQLITE_OK)
-    {
-        NSString *insertSQL = [NSString stringWithFormat:@"insert into routetable (_id, route, location, day, time) values (\"%d\",\"%@\", \"%@\", \"%@\")",[registerNumber integerValue], name, department, year];
+    if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
+        NSString *insertSQL = [NSString stringWithFormat:@"insert into routetable (route, location, day, time, direction) values ()"];
         const char *insert_stmt = [insertSQL UTF8String];
         sqlite3_prepare_v2(database, insert_stmt, -1, &statement, NULL);
-        if (sqlite3_step(statement) == SQLITE_DONE) {
+        if (sqlite3_step(statement == SQLITE_DONE) ) {
             return YES;
         } else {
             return NO;
@@ -70,25 +67,45 @@ static sqlite3_stmt *statement = nil;
     }
     return NO;
 }
-                                
-- (NSArray*) findByRegisterNumber:(NSString*)registerNumber {
+
+//- (NSArray*) findByRegisterNumber:(NSString*)registerNumber {
+//    const char *dbpath = [databasePath UTF8String];
+//    if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
+//        NSString *querySQL = [NSString stringWithFormat:@"select name, department, year from studentsDetail where regno=\"%@\"",registerNumber];
+//        const char *query_stmt = [querySQL UTF8String];
+//        NSMutableArray *resultArray = [[NSMutableArray alloc]init];
+//        if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
+//            if (sqlite3_step(statement) == SQLITE_ROW) {
+//                NSString *name = [[NSString alloc] initWithUTF8String:
+//                                        (const char *) sqlite3_column_text(statement, 0)];
+//                [resultArray addObject:name];
+//                NSString *department = [[NSString alloc] initWithUTF8String:
+//                                        (const char *) sqlite3_column_text(statement, 1)];
+//                [resultArray addObject:department];
+//                NSString *year = [[NSString alloc]initWithUTF8String:
+//                                        (const char *) sqlite3_column_text(statement, 2)];
+//                [resultArray addObject:year];
+//                return resultArray;
+//            } else {
+//                NSLog(@"Not found");
+//                return nil;
+//            }
+//            sqlite3_reset(statement);
+//        }
+//    }
+//    return nil;
+//}
+
+- (NSArray*) getTimeAndRoute:(NSString*)QRData time:(NSString*)_time {
     const char *dbpath = [databasePath UTF8String];
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
-        NSString *querySQL = [NSString stringWithFormat:@"select name, department, year from studentsDetail where regno=\"%@\"",registerNumber];
+        NSString *querySQL = [NSString stringWithFormat:@"\"%@\"",QRData];
         const char *query_stmt = [querySQL UTF8String];
         NSMutableArray *resultArray = [[NSMutableArray alloc]init];
         if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
             if (sqlite3_step(statement) == SQLITE_ROW) {
-                NSString *name = [[NSString alloc] initWithUTF8String:
-                                        (const char *) sqlite3_column_text(statement, 0)];
-                [resultArray addObject:name];
-                NSString *department = [[NSString alloc] initWithUTF8String:
-                                        (const char *) sqlite3_column_text(statement, 1)];
-                [resultArray addObject:department];
-                NSString *year = [[NSString alloc]initWithUTF8String:
-                                        (const char *) sqlite3_column_text(statement, 2)];
-                [resultArray addObject:year];
-                return resultArray;
+                NSString *route = [[NSString alloc] initWithUTF8String: (const char *) sqlite3_column_text(statement, 0)];
+                
             } else {
                 NSLog(@"Not found");
                 return nil;
@@ -98,5 +115,7 @@ static sqlite3_stmt *statement = nil;
     }
     return nil;
 }
+
+
 
 @end

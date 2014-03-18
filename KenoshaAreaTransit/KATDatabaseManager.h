@@ -16,8 +16,6 @@
 
 +(KATDatabaseManager*)getSharedInstance;
 -(BOOL)createDB;
--(BOOL) saveData:(NSString*)registerNumber name:(NSString*)name
+-(BOOL)saveData:(NSString*)registerNumber name:(NSString*)name
       department:(NSString*)department year:(NSString*)year;
--(NSArray*) findByRegisterNumber:(NSString*)registerNumber;
-
 @end
