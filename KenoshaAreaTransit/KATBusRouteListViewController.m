@@ -8,10 +8,6 @@
 
 #import "KATBusRouteListViewController.h"
 
-@interface KATBusRouteListViewController ()
-
-@end
-
 @implementation KATBusRouteListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,10 +33,8 @@
                            @"Time: 4:00 pm", @"routeTime", @"Direction: South", @"routeDirection", nil];
     NSDictionary *dict3 = [NSDictionary dictionaryWithObjectsAndKeys:@"Route: 3", @"routeNumber",
                            @"Time: 5:20 pm", @"routeTime", @"Direction: North", @"routeDirection", nil];
-    NSDictionary *dict4 = [NSDictionary dictionaryWithObjectsAndKeys:@"Route: 4", @"routeNumber",
-                           @"Time: 6:00 pm", @"routeTime", @"Direction: South", @"routeDirection", nil];
     
-    self.busListArray = [NSMutableArray arrayWithObjects:dict1, dict2, dict3, dict4, nil];
+    self.busListArray = [NSMutableArray arrayWithObjects:dict1, dict2, dict3, nil];
     //end of test code input
     
 }
@@ -64,10 +58,6 @@
     tableCell.routeDirectionLabel.text = [dict objectForKey:@"routeDirection"];
     
     return tableCell;
-}
-
--(BOOL)shouldAutorotate{
-    return NO;
 }
 
 - (void)didReceiveMemoryWarning

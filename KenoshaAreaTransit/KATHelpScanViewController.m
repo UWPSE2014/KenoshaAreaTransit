@@ -8,10 +8,6 @@
 
 #import "KATHelpScanViewController.h"
 
-@interface KATHelpScanViewController ()
-
-@end
-
 @implementation KATHelpScanViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -57,10 +53,6 @@
     
     textView.frame = CGRectMake(CGRectGetMinX(textView.frame), CGRectGetMinY(textView.frame), textSize.width, textSize.height);
     
-}
-
--(BOOL)shouldAutorotate{
-    return NO;
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		671F146218AA935200DB8018 /* KATHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671F146118AA935200DB8018 /* KATHomeViewController.m */; };
 		67339D1518A3FC8200C6F563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67339D1418A3FC8200C6F563 /* Foundation.framework */; };
 		67339D1718A3FC8200C6F563 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67339D1618A3FC8200C6F563 /* CoreGraphics.framework */; };
 		67339D1918A3FC8200C6F563 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67339D1818A3FC8200C6F563 /* UIKit.framework */; };
@@ -44,6 +43,13 @@
 		D222D4A418CFB3910094E3B3 /* KATScanButtonClicked.png in Resources */ = {isa = PBXBuildFile; fileRef = D222D49118CFB3910094E3B3 /* KATScanButtonClicked.png */; };
 		D222D4A518CFB3910094E3B3 /* KATScanIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D222D49218CFB3910094E3B3 /* KATScanIcon.png */; };
 		D222D4A618CFB3910094E3B3 /* KATScanIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D222D49318CFB3910094E3B3 /* KATScanIcon@2x.png */; };
+		D24AD4AE18D7D32500990AFD /* KATDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D24AD4AD18D7D32500990AFD /* KATDatabaseManager.m */; };
+		D24AD4CD18D7D34100990AFD /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D24AD4C718D7D34100990AFD /* libzbar.a */; };
+		D24AD4CE18D7D34100990AFD /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = D24AD4C918D7D34100990AFD /* zbar-back.png */; };
+		D24AD4CF18D7D34100990AFD /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = D24AD4CA18D7D34100990AFD /* zbar-help.html */; };
+		D24AD4D018D7D34100990AFD /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = D24AD4CB18D7D34100990AFD /* zbar-helpicons.png */; };
+		D24AD4D118D7D34100990AFD /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = D24AD4CC18D7D34100990AFD /* zbar-samples.png */; };
+		D24AD4D418D7D35D00990AFD /* KATHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24AD4D318D7D35D00990AFD /* KATHomeViewController.m */; };
 		D2DE165318C28DEE009A4AC0 /* KATRoutePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE165218C28DEE009A4AC0 /* KATRoutePageViewController.m */; };
 		D2DE165918C2BAD8009A4AC0 /* KATHelpScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE165818C2BAD8009A4AC0 /* KATHelpScanViewController.m */; };
 		D2DE165C18C2BD2D009A4AC0 /* KATHelpRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE165B18C2BD2D009A4AC0 /* KATHelpRouteViewController.m */; };
@@ -60,8 +66,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		671F146018AA935200DB8018 /* KATHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATHomeViewController.h; sourceTree = "<group>"; };
-		671F146118AA935200DB8018 /* KATHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATHomeViewController.m; sourceTree = "<group>"; };
 		67339D1118A3FC8200C6F563 /* KenoshaAreaTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenoshaAreaTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67339D1418A3FC8200C6F563 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		67339D1618A3FC8200C6F563 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -105,6 +109,35 @@
 		D222D49118CFB3910094E3B3 /* KATScanButtonClicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KATScanButtonClicked.png; path = KatImages/KATScanButtonClicked.png; sourceTree = "<group>"; };
 		D222D49218CFB3910094E3B3 /* KATScanIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = KATScanIcon.png; path = KatImages/KATScanIcon.png; sourceTree = "<group>"; };
 		D222D49318CFB3910094E3B3 /* KATScanIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "KATScanIcon@2x.png"; path = "KatImages/KATScanIcon@2x.png"; sourceTree = "<group>"; };
+		D24AD4AC18D7D32500990AFD /* KATDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATDatabaseManager.h; sourceTree = "<group>"; };
+		D24AD4AD18D7D32500990AFD /* KATDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATDatabaseManager.m; sourceTree = "<group>"; };
+		D24AD4B318D7D34100990AFD /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		D24AD4B418D7D34100990AFD /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		D24AD4B518D7D34100990AFD /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		D24AD4B618D7D34100990AFD /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		D24AD4B718D7D34100990AFD /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		D24AD4B818D7D34100990AFD /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		D24AD4B918D7D34100990AFD /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		D24AD4BA18D7D34100990AFD /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		D24AD4BB18D7D34100990AFD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		D24AD4BC18D7D34100990AFD /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		D24AD4BD18D7D34100990AFD /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		D24AD4BE18D7D34100990AFD /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		D24AD4BF18D7D34100990AFD /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		D24AD4C018D7D34100990AFD /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		D24AD4C118D7D34100990AFD /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		D24AD4C218D7D34100990AFD /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		D24AD4C318D7D34100990AFD /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		D24AD4C418D7D34100990AFD /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		D24AD4C518D7D34100990AFD /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		D24AD4C618D7D34100990AFD /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		D24AD4C718D7D34100990AFD /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		D24AD4C918D7D34100990AFD /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		D24AD4CA18D7D34100990AFD /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		D24AD4CB18D7D34100990AFD /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		D24AD4CC18D7D34100990AFD /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		D24AD4D218D7D35D00990AFD /* KATHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATHomeViewController.h; sourceTree = "<group>"; };
+		D24AD4D318D7D35D00990AFD /* KATHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATHomeViewController.m; sourceTree = "<group>"; };
 		D2DE165118C28DEE009A4AC0 /* KATRoutePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATRoutePageViewController.h; sourceTree = "<group>"; };
 		D2DE165218C28DEE009A4AC0 /* KATRoutePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KATRoutePageViewController.m; sourceTree = "<group>"; };
 		D2DE165718C2BAD8009A4AC0 /* KATHelpScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KATHelpScanViewController.h; sourceTree = "<group>"; };
@@ -120,6 +153,7 @@
 			files = (
 				67339D1718A3FC8200C6F563 /* CoreGraphics.framework in Frameworks */,
 				67339D1918A3FC8200C6F563 /* UIKit.framework in Frameworks */,
+				D24AD4CD18D7D34100990AFD /* libzbar.a in Frameworks */,
 				67339D1518A3FC8200C6F563 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +174,7 @@
 		67339D0818A3FC8200C6F563 = {
 			isa = PBXGroup;
 			children = (
+				D24AD4AF18D7D34100990AFD /* ZBarSDK */,
 				67339D1A18A3FC8200C6F563 /* KenoshaAreaTransit */,
 				67339D3F18A3FC8200C6F563 /* KenoshaAreaTransitTests */,
 				67339D1318A3FC8200C6F563 /* Frameworks */,
@@ -170,11 +205,17 @@
 		67339D1A18A3FC8200C6F563 /* KenoshaAreaTransit */ = {
 			isa = PBXGroup;
 			children = (
+				D24AD4D218D7D35D00990AFD /* KATHomeViewController.h */,
+				D24AD4D318D7D35D00990AFD /* KATHomeViewController.m */,
 				67339D2318A3FC8200C6F563 /* KATAppDelegate.h */,
 				67339D2418A3FC8200C6F563 /* KATAppDelegate.m */,
 				67339D2618A3FC8200C6F563 /* Main_iPhone.storyboard */,
 				D2DE165118C28DEE009A4AC0 /* KATRoutePageViewController.h */,
 				D2DE165218C28DEE009A4AC0 /* KATRoutePageViewController.m */,
+				D24AD4AC18D7D32500990AFD /* KATDatabaseManager.h */,
+				D24AD4AD18D7D32500990AFD /* KATDatabaseManager.m */,
+				D200B25F18B9B6CE00D74309 /* KATBusListTableCell.h */,
+				D200B26018B9B6CE00D74309 /* KATBusListTableCell.m */,
 				D200B25C18B9B5C000D74309 /* KATBusRouteListViewController.h */,
 				D200B25D18B9B5C000D74309 /* KATBusRouteListViewController.m */,
 				D200B25918B9AD3300D74309 /* KATHelpContactViewController.h */,
@@ -183,13 +224,9 @@
 				D2DE165B18C2BD2D009A4AC0 /* KATHelpRouteViewController.m */,
 				D2DE165718C2BAD8009A4AC0 /* KATHelpScanViewController.h */,
 				D2DE165818C2BAD8009A4AC0 /* KATHelpScanViewController.m */,
-				671F146018AA935200DB8018 /* KATHomeViewController.h */,
-				671F146118AA935200DB8018 /* KATHomeViewController.m */,
 				67339D2918A3FC8200C6F563 /* Main_iPad.storyboard */,
 				67339D3218A3FC8200C6F563 /* Images.xcassets */,
 				67339D1B18A3FC8200C6F563 /* Supporting Files */,
-				D200B25F18B9B6CE00D74309 /* KATBusListTableCell.h */,
-				D200B26018B9B6CE00D74309 /* KATBusListTableCell.m */,
 			);
 			path = KenoshaAreaTransit;
 			sourceTree = "<group>";
@@ -240,6 +277,70 @@
 				67339D4218A3FC8200C6F563 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D24AD4AF18D7D34100990AFD /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D24AD4B018D7D34100990AFD /* Headers */,
+				D24AD4C718D7D34100990AFD /* libzbar.a */,
+				D24AD4C818D7D34100990AFD /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		D24AD4B018D7D34100990AFD /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D24AD4B118D7D34100990AFD /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		D24AD4B118D7D34100990AFD /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D24AD4B218D7D34100990AFD /* zbar */,
+				D24AD4BC18D7D34100990AFD /* zbar.h */,
+				D24AD4BD18D7D34100990AFD /* ZBarCameraSimulator.h */,
+				D24AD4BE18D7D34100990AFD /* ZBarCaptureReader.h */,
+				D24AD4BF18D7D34100990AFD /* ZBarHelpController.h */,
+				D24AD4C018D7D34100990AFD /* ZBarImage.h */,
+				D24AD4C118D7D34100990AFD /* ZBarImageScanner.h */,
+				D24AD4C218D7D34100990AFD /* ZBarReaderController.h */,
+				D24AD4C318D7D34100990AFD /* ZBarReaderView.h */,
+				D24AD4C418D7D34100990AFD /* ZBarReaderViewController.h */,
+				D24AD4C518D7D34100990AFD /* ZBarSDK.h */,
+				D24AD4C618D7D34100990AFD /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		D24AD4B218D7D34100990AFD /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				D24AD4B318D7D34100990AFD /* Decoder.h */,
+				D24AD4B418D7D34100990AFD /* Exception.h */,
+				D24AD4B518D7D34100990AFD /* Image.h */,
+				D24AD4B618D7D34100990AFD /* ImageScanner.h */,
+				D24AD4B718D7D34100990AFD /* Processor.h */,
+				D24AD4B818D7D34100990AFD /* Scanner.h */,
+				D24AD4B918D7D34100990AFD /* Symbol.h */,
+				D24AD4BA18D7D34100990AFD /* Video.h */,
+				D24AD4BB18D7D34100990AFD /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		D24AD4C818D7D34100990AFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D24AD4C918D7D34100990AFD /* zbar-back.png */,
+				D24AD4CA18D7D34100990AFD /* zbar-help.html */,
+				D24AD4CB18D7D34100990AFD /* zbar-helpicons.png */,
+				D24AD4CC18D7D34100990AFD /* zbar-samples.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,11 +434,15 @@
 				67339D2818A3FC8200C6F563 /* Main_iPhone.storyboard in Resources */,
 				D222D49618CFB3910094E3B3 /* KATContactIcon.png in Resources */,
 				D222D4A618CFB3910094E3B3 /* KATScanIcon@2x.png in Resources */,
+				D24AD4D118D7D34100990AFD /* zbar-samples.png in Resources */,
 				67339D1F18A3FC8200C6F563 /* InfoPlist.strings in Resources */,
 				D222D49D18CFB3910094E3B3 /* KatIcon120pix.png in Resources */,
+				D24AD4CE18D7D34100990AFD /* zbar-back.png in Resources */,
 				D222D4A218CFB3910094E3B3 /* KATRouteIcon@2x.png in Resources */,
 				D222D4A418CFB3910094E3B3 /* KATScanButtonClicked.png in Resources */,
+				D24AD4CF18D7D34100990AFD /* zbar-help.html in Resources */,
 				D222D49518CFB3910094E3B3 /* KATBusListBackground.png in Resources */,
+				D24AD4D018D7D34100990AFD /* zbar-helpicons.png in Resources */,
 				D222D49918CFB3910094E3B3 /* KATHelpButtonClicked.png in Resources */,
 				D222D49718CFB3910094E3B3 /* KATContactIcon@2x.png in Resources */,
 				D222D49E18CFB3910094E3B3 /* KATLogoBanner.png in Resources */,
@@ -363,15 +468,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24AD4D418D7D35D00990AFD /* KATHomeViewController.m in Sources */,
 				D200B26118B9B6CE00D74309 /* KATBusListTableCell.m in Sources */,
 				D2DE165C18C2BD2D009A4AC0 /* KATHelpRouteViewController.m in Sources */,
 				D200B25E18B9B5C000D74309 /* KATBusRouteListViewController.m in Sources */,
+				D24AD4AE18D7D32500990AFD /* KATDatabaseManager.m in Sources */,
 				67339D2118A3FC8200C6F563 /* main.m in Sources */,
 				D2DE165918C2BAD8009A4AC0 /* KATHelpScanViewController.m in Sources */,
 				D2DE165318C28DEE009A4AC0 /* KATRoutePageViewController.m in Sources */,
 				D200B25B18B9AD3400D74309 /* KATHelpContactViewController.m in Sources */,
 				67339D2518A3FC8200C6F563 /* KATAppDelegate.m in Sources */,
-				671F146218AA935200DB8018 /* KATHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +619,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KenoshaAreaTransit/KenoshaAreaTransit-Prefix.pch";
 				INFOPLIST_FILE = "KenoshaAreaTransit/KenoshaAreaTransit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -529,6 +639,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KenoshaAreaTransit/KenoshaAreaTransit-Prefix.pch";
 				INFOPLIST_FILE = "KenoshaAreaTransit/KenoshaAreaTransit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

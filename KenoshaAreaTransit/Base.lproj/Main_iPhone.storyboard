@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8XF-Lc-5JH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8XF-Lc-5JH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -8,11 +8,15 @@
         <scene sceneID="VXG-bQ-b0E">
             <objects>
                 <viewController storyboardIdentifier="Main" id="8XF-Lc-5JH" customClass="KATHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Czb-CA-IVl"/>
+                        <viewControllerLayoutGuide type="bottom" id="MV9-0X-TMt"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="X8c-Fn-Nk7" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="tZt-WV-mug">
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZt-WV-mug">
                                 <rect key="frame" x="20" y="170" width="280" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -30,7 +34,7 @@
                                     <segue destination="WPk-93-YOp" kind="modal" id="IYI-52-dJt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="9cJ-Ll-iL0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-Ll-iL0">
                                 <rect key="frame" x="20" y="270" width="280" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -47,7 +51,7 @@
                                     <segue destination="ZRR-bg-5pr" kind="modal" id="74l-Gh-p9X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="3Zv-0o-Pd5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zv-0o-Pd5">
                                 <rect key="frame" x="20" y="370" width="280" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cyan="0.93999999999999995" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -64,13 +68,16 @@
                                     <segue destination="JgE-QG-o0G" kind="modal" id="ouq-g9-Bau"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rua-3N-QSO">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rua-3N-QSO">
                                 <rect key="frame" x="0.0" y="30" width="320" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Kenosha Area Transit" backgroundImage="KATLogoBanner.png">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="logoLinkToWebsite:" destination="8XF-Lc-5JH" eventType="touchUpInside" id="r9U-QM-ybK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cyan="0.94000000000000006" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -90,11 +97,15 @@
         <scene sceneID="tXP-cf-COB">
             <objects>
                 <viewController storyboardIdentifier="Scan" id="WPk-93-YOp" userLabel="Scan View Controller" customClass="KATBusRouteListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pct-tC-S4Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="3W2-Hv-w32"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iTm-5u-Djl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XL5-MQ-GpY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XL5-MQ-GpY">
                                 <rect key="frame" x="0.0" y="20" width="320" height="479"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,29 +117,51 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KATBusListBackground.png" id="oqR-LV-cvN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KATBusListBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="oqR-LV-cvN">
                                                     <rect key="frame" x="-3" y="0.0" width="325" height="149"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hak-7E-Qlk">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-7E-Qlk">
                                                     <rect key="frame" x="0.0" y="20" width="320" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="mmt-at-Que"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eka-An-rWU">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eka-An-rWU">
                                                     <rect key="frame" x="0.0" y="59" width="320" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="6Rp-8Y-lSW"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zec-h0-BJh">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zec-h0-BJh">
                                                     <rect key="frame" x="0.0" y="97" width="320" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="oqR-LV-cvN" secondAttribute="bottom" id="6x2-xT-t47"/>
+                                                <constraint firstItem="oqR-LV-cvN" firstAttribute="top" secondItem="IWY-jT-gTb" secondAttribute="top" id="Dcg-O9-v6c"/>
+                                                <constraint firstItem="Eka-An-rWU" firstAttribute="leading" secondItem="Hak-7E-Qlk" secondAttribute="leading" id="IM7-85-5WZ"/>
+                                                <constraint firstItem="zec-h0-BJh" firstAttribute="leading" secondItem="Eka-An-rWU" secondAttribute="leading" id="N2A-lA-d4f"/>
+                                                <constraint firstAttribute="bottom" secondItem="zec-h0-BJh" secondAttribute="bottom" constant="20" symbolic="YES" id="UkD-TW-VZF"/>
+                                                <constraint firstItem="Hak-7E-Qlk" firstAttribute="leading" secondItem="IWY-jT-gTb" secondAttribute="leading" id="Vxn-rq-JCV"/>
+                                                <constraint firstItem="zec-h0-BJh" firstAttribute="top" secondItem="Eka-An-rWU" secondAttribute="bottom" constant="6" id="X7E-a7-3c6"/>
+                                                <constraint firstItem="zec-h0-BJh" firstAttribute="trailing" secondItem="Eka-An-rWU" secondAttribute="trailing" id="fUs-QM-p4F"/>
+                                                <constraint firstItem="oqR-LV-cvN" firstAttribute="leading" secondItem="IWY-jT-gTb" secondAttribute="leading" constant="-3" id="g4a-0k-fSy"/>
+                                                <constraint firstItem="Hak-7E-Qlk" firstAttribute="top" secondItem="IWY-jT-gTb" secondAttribute="top" constant="20" symbolic="YES" id="gaT-m2-DgS"/>
+                                                <constraint firstAttribute="trailing" secondItem="oqR-LV-cvN" secondAttribute="trailing" constant="-2" id="m4W-gS-823"/>
+                                                <constraint firstAttribute="trailing" secondItem="zec-h0-BJh" secondAttribute="trailing" id="nwx-2P-Nze"/>
+                                                <constraint firstItem="Eka-An-rWU" firstAttribute="top" secondItem="Hak-7E-Qlk" secondAttribute="bottom" constant="7" id="ufB-eL-plI"/>
+                                                <constraint firstItem="Hak-7E-Qlk" firstAttribute="trailing" secondItem="Eka-An-rWU" secondAttribute="trailing" id="zch-QS-Goc"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="routeDirectionLabel" destination="zec-h0-BJh" id="yBW-pw-bEU"/>
@@ -138,9 +171,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xjq-ew-9lF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-ew-9lF">
                                 <rect key="frame" x="119" y="507" width="83" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2dT-C8-pzq"/>
+                                    <constraint firstAttribute="width" constant="83" id="mDe-ch-nvC"/>
+                                </constraints>
                                 <state key="normal" title="Back" backgroundImage="KATBackButton.png">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,6 +188,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" cyan="0.94000000000000006" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XL5-MQ-GpY" firstAttribute="top" secondItem="iTm-5u-Djl" secondAttribute="top" constant="20" symbolic="YES" id="AHP-H5-97x"/>
+                            <constraint firstItem="xjq-ew-9lF" firstAttribute="centerX" secondItem="XL5-MQ-GpY" secondAttribute="centerX" id="Akv-rA-QgH"/>
+                            <constraint firstItem="xjq-ew-9lF" firstAttribute="top" secondItem="XL5-MQ-GpY" secondAttribute="bottom" constant="8" symbolic="YES" id="DDB-lQ-zw8"/>
+                            <constraint firstAttribute="trailing" secondItem="XL5-MQ-GpY" secondAttribute="trailing" id="YCc-KG-EWn"/>
+                            <constraint firstItem="3W2-Hv-w32" firstAttribute="top" secondItem="xjq-ew-9lF" secondAttribute="bottom" constant="11" id="lZZ-hq-wgb"/>
+                            <constraint firstItem="XL5-MQ-GpY" firstAttribute="leading" secondItem="iTm-5u-Djl" secondAttribute="leading" id="ste-iC-wA8"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="busListTableView" destination="XL5-MQ-GpY" id="tMe-9e-lCw"/>
@@ -165,18 +210,26 @@
         <scene sceneID="ogC-l4-rKq">
             <objects>
                 <viewController storyboardIdentifier="Route" id="ZRR-bg-5pr" userLabel="Route View Controller" customClass="KATRoutePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OVR-WW-xJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="MRk-wU-vio"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ubQ-92-qrU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" id="eNc-2L-lwa">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNc-2L-lwa">
                                 <rect key="frame" x="-5" y="406" width="325" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99767051819999997" green="0.99879784149999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RNI-L5-A9n">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNI-L5-A9n">
                                 <rect key="frame" x="20" y="20" width="83" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZWR-PW-y8z"/>
+                                    <constraint firstAttribute="width" constant="83" id="p9R-lr-nxO"/>
+                                </constraints>
                                 <state key="normal" title="Back" backgroundImage="KATBackButton.png">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,6 +240,13 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" cyan="0.94000000000000006" magenta="0.93000000000000005" yellow="0.28000000000000003" black="0.17000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eNc-2L-lwa" secondAttribute="trailing" id="FTA-jT-unm"/>
+                            <constraint firstItem="eNc-2L-lwa" firstAttribute="leading" secondItem="ubQ-92-qrU" secondAttribute="leading" constant="-5" id="XT5-1S-D10"/>
+                            <constraint firstItem="RNI-L5-A9n" firstAttribute="top" secondItem="ubQ-92-qrU" secondAttribute="top" constant="20" symbolic="YES" id="gX1-gO-o6N"/>
+                            <constraint firstItem="RNI-L5-A9n" firstAttribute="leading" secondItem="ubQ-92-qrU" secondAttribute="leading" constant="20" symbolic="YES" id="xNn-ep-QLW"/>
+                            <constraint firstAttribute="bottom" secondItem="eNc-2L-lwa" secondAttribute="bottom" id="y09-yp-dIL"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="destinationPicker" destination="eNc-2L-lwa" id="Re7-kP-RpC"/>
@@ -221,18 +281,22 @@
         <scene sceneID="za1-FP-C0E">
             <objects>
                 <viewController storyboardIdentifier="Route Help" id="uIZ-Op-Br6" userLabel="Route Help View Controller" customClass="KATHelpRouteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JxO-W9-GIo"/>
+                        <viewControllerLayoutGuide type="bottom" id="sXn-TV-dUX"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Dfi-lV-Mpg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This is Route Tab.  This shows how to use the Route feature." id="Uwj-9q-NdC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="This is Route Tab.  This shows how to use the Route feature." translatesAutoresizingMaskIntoConstraints="NO" id="Uwj-9q-NdC">
                                 <rect key="frame" x="0.0" y="72" width="320" height="446"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kaQ-96-ek8">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaQ-96-ek8">
                                 <rect key="frame" x="8" y="14" width="83" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back" backgroundImage="KATBackButton.png">
@@ -261,18 +325,22 @@
         <scene sceneID="bzi-oi-E1W">
             <objects>
                 <viewController storyboardIdentifier="Scan Help" id="0YB-b3-bcY" userLabel="Scan Help View Controller" customClass="KATHelpScanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TY8-46-Ub7"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKu-sC-1jW"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R7m-1e-k3j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This is the Scan tab.  It explains how to use the scan feature" id="r1B-Da-eq0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="This is the Scan tab.  It explains how to use the scan feature" translatesAutoresizingMaskIntoConstraints="NO" id="r1B-Da-eq0">
                                 <rect key="frame" x="0.0" y="72" width="320" height="446"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5T1-Q9-qnQ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5T1-Q9-qnQ">
                                 <rect key="frame" x="8" y="14" width="83" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back" backgroundImage="KATBackButton.png">
@@ -302,11 +370,15 @@
         <scene sceneID="4yB-dP-FPb">
             <objects>
                 <viewController storyboardIdentifier="Contact Help" id="Vu5-z9-IR0" userLabel="Contact Help View Controller" customClass="KATHelpContactViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qj6-Ad-Xqm"/>
+                        <viewControllerLayoutGuide type="bottom" id="AAh-2X-QfC"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Ta-an-A9t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="QwC-2s-cC4">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwC-2s-cC4">
                                 <rect key="frame" x="0.0" y="72" width="320" height="446"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -336,7 +408,7 @@ or visit: www.kenosha.org</string>
                                     <outletCollection property="gestureRecognizers" destination="jsx-zi-KjP" appends="YES" id="5uc-B1-xMU"/>
                                 </connections>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2AI-4J-ASs">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AI-4J-ASs">
                                 <rect key="frame" x="8" y="14" width="83" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back" backgroundImage="KATBackButton.png">

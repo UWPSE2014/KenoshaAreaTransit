@@ -8,10 +8,6 @@
 
 #import "KATHelpContactViewController.h"
 
-@interface KATHelpContactViewController ()
-
-@end
-
 @implementation KATHelpContactViewController
 
 
@@ -60,10 +56,6 @@
     
     textView.frame = CGRectMake(CGRectGetMinX(textView.frame), CGRectGetMinY(textView.frame), textSize.width, textSize.height);
     
-}
-
--(BOOL)shouldAutorotate{
-    return NO;
 }
 
 - (void)didReceiveMemoryWarning
