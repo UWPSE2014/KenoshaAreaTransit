@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>15288FFA-A483-462B-B013-58F4B5063B95</string>
+	<string>3B0FC354-17E1-4CE0-B24C-597A7FCF5C9F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>KenoshaAreaTransit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8ACCEC11-4EBD-4EFA-A5BD-B47F55CE32E5</key>
+		<key>85428C06-582E-4A4B-A736-1E322FB0D7C0</key>
 		<string>https://github.com/UWPSE2014/KenoshaAreaTransit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>KenoshaAreaTransit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8ACCEC11-4EBD-4EFA-A5BD-B47F55CE32E5</key>
+		<key>85428C06-582E-4A4B-A736-1E322FB0D7C0</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8ACCEC11-4EBD-4EFA-A5BD-B47F55CE32E5</string>
+	<string>85428C06-582E-4A4B-A736-1E322FB0D7C0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8ACCEC11-4EBD-4EFA-A5BD-B47F55CE32E5</string>
+			<string>85428C06-582E-4A4B-A736-1E322FB0D7C0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>KAT</string>
+			<string>KenoshaAreaTransit</string>
 		</dict>
 	</array>
 </dict>

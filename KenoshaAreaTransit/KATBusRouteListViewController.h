@@ -12,8 +12,5 @@
 @interface KATBusRouteListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) NSMutableArray *busListArray;
 @property (strong, nonatomic) IBOutlet UITableView *busListTableView;
-//@property (strong, nonatomic) IBOutlet UILabel *routeNumberLabel;
-//@property (strong, nonatomic) IBOutlet UILabel *routeTimeLabel;
-//@property (strong, nonatomic) IBOutlet UILabel *routeDirectionLabel;
 
 @end
