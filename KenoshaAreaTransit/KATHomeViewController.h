@@ -15,13 +15,13 @@
 @property (nonatomic) IBOutlet UIButton *btnScan;
 @property (nonatomic) IBOutlet UIButton *btnRoute;
 @property (nonatomic) IBOutlet UIButton *btnHelp;
-@property (strong, nonatomic) IBOutlet UITextField *resultText;
+@property (nonatomic, retain) IBOutlet UITextField *resultText;
 
 // Touch events to change button images
 -(IBAction)touchScan:(id)sender;
 -(IBAction)upScan:(id)sender;
--(IBAction)upInsideScan:(id)sender;
 -(IBAction)touchRoute:(id)sender;
+-(IBAction)upInsideScan:(id)sender;
 -(IBAction)upRoute:(id)sender;
 -(IBAction)touchHelp:(id)sender;
 -(IBAction)upHelp:(id)sender;

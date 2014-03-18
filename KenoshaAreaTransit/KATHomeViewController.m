@@ -7,7 +7,6 @@
 //
 
 #import "KATHomeViewController.h"
-#import "KATBusRouteListViewController.h"
 
 @implementation KATHomeViewController
 @synthesize btnHelp, btnRoute, btnScan, resultText;
@@ -16,13 +15,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-7.png"] forState:UIControlStateSelected];
-        [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-9.png"] forState:UIControlStateSelected];
-        [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-12.png"] forState:UIControlStateSelected];
+        [btnRoute setImage:[UIImage imageNamed:@"KATRouteButton.png"] forState:UIControlStateSelected];
+        [btnHelp setImage:[UIImage imageNamed:@"KATHelpButton.png"] forState:UIControlStateSelected];
         
-        [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-6.png"] forState:UIControlStateHighlighted];
-        [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-8.png"] forState:UIControlStateHighlighted];
-        [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-11.png"] forState:UIControlStateHighlighted];
+        [btnScan setImage:[UIImage imageNamed:@"KATScanButtonClicked.png"] forState:UIControlStateHighlighted];
+        [btnRoute setImage:[UIImage imageNamed:@"KATRouteButtonClicked.png"] forState:UIControlStateHighlighted];
+        [btnHelp setImage:[UIImage imageNamed:@"KatHelpButtonClicked.png"] forState:UIControlStateHighlighted];
         
         btnScan.adjustsImageWhenHighlighted = YES;
         btnRoute.adjustsImageWhenHighlighted = YES;
@@ -37,11 +35,12 @@
  the user touches them
  ************************************/
 -(IBAction)touchScan:(id)sender {
-    [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-6.png"] forState:UIControlStateNormal];
+    [btnScan setImage:[UIImage imageNamed:@"KATScanButtonClicked.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)upScan:(id)sender {
-    [btnScan setImage:[UIImage imageNamed:@"GetFileAttachment-7.png"] forState:UIControlStateNormal];
+    
+    [btnScan setImage:[UIImage imageNamed:@"KATScanButton.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)upInsideScan:(id)sender {
@@ -64,22 +63,23 @@
     }
 }
 
+
 -(IBAction)touchRoute:(id)sender {
-    [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-8.png"] forState:UIControlStateNormal];
+    [btnRoute setImage:[UIImage imageNamed:@"KATRouteButtonClicked.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)upRoute:(id)sender {
     
-    [btnRoute setImage:[UIImage imageNamed:@"GetFileAttachment-9.png"] forState:UIControlStateNormal];
+    [btnRoute setImage:[UIImage imageNamed:@"KATRouteButton.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)touchHelp:(id)sender {
-    [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-11.png"] forState:UIControlStateNormal];
+    [btnHelp setImage:[UIImage imageNamed:@"KATHelpButtonClicked.png"] forState:UIControlStateNormal];
 }
 
 -(IBAction)upHelp:(id)sender {
     
-    [btnHelp setImage:[UIImage imageNamed:@"GetFileAttachment-12.png"] forState:UIControlStateNormal];
+    [btnHelp setImage:[UIImage imageNamed:@"KATHelpButton.png"] forState:UIControlStateNormal];
 }
 
 - (void) imagePickerController: (UIImagePickerController*) reader
@@ -97,12 +97,24 @@
     
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
+
+-(IBAction)unwindToMainMenu:(UIStoryboardSegue *)sender{
+    
+}
+
+-(BOOL)shouldAutorotate{
+    return NO;
+}
+
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

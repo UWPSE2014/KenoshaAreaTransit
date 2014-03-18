@@ -8,6 +8,10 @@
 
 #import "KATRoutePageViewController.h"
 
+@interface KATRoutePageViewController ()
+
+@end
+
 @implementation KATRoutePageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -23,6 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+-(BOOL)shouldAutorotate{
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning

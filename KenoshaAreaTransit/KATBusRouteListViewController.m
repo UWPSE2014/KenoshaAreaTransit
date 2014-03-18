@@ -8,6 +8,10 @@
 
 #import "KATBusRouteListViewController.h"
 
+@interface KATBusRouteListViewController ()
+
+@end
+
 @implementation KATBusRouteListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -58,6 +62,10 @@
     tableCell.routeDirectionLabel.text = [dict objectForKey:@"routeDirection"];
     
     return tableCell;
+}
+
+-(BOOL)shouldAutorotate{
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning

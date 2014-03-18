@@ -8,6 +8,10 @@
 
 #import "KATHelpRouteViewController.h"
 
+@interface KATHelpRouteViewController ()
+
+@end
+
 @implementation KATHelpRouteViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -53,6 +57,10 @@
     
     textView.frame = CGRectMake(CGRectGetMinX(textView.frame), CGRectGetMinY(textView.frame), textSize.width, textSize.height);
     
+}
+
+-(BOOL)shouldAutorotate{
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning
